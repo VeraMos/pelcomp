@@ -20,11 +20,13 @@
 		<a href="#"><img src="img/logo.svg" alt="Логотип"></a>
 	</header>
 
-	<section class="banner" swg-stage-directive="" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+	<section class="banner" uk-parallax="bgy: 200; opacity: 0;">
 		<div class="banner-wrap">
-			<div class="banner__ttl">Технологическое присоединение к электросетям в Москве и Московской области</div>
-		<a class="btn banner__btn" href="#">Подробнее</a>
-		</div>			
+			<div class="banner-wrap_inn" uk-parallax="opacity: 1; y: 80,0; viewport: 0.5">
+				<div class="banner__ttl">Технологическое присоединение к электросетям в Москве и Московской области</div>
+			<a class="btn banner__btn" href="#">Подробнее</a>
+			</div>
+		</div>		
 	</section>
 
 	<section class="news">
@@ -70,7 +72,7 @@
 		</div>
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl" uk-parallax="opacity: 1; y: -200,100; viewport: 0.5">
 					<span>Технологическое присоединение</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -80,7 +82,7 @@
 
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl about-inn__left" uk-parallax="opacity: 1; y: -50,50; viewport: 0.5">
 					<span>Территория обслуживания</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -91,7 +93,7 @@
 
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl" uk-parallax="opacity: 1; y: -150,150; viewport: 0.5">
 					<span>Многолетний опыт</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -101,7 +103,7 @@
 
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl about-inn__left" uk-parallax="opacity: 1; y: -50,50; viewport: 0.5">
 					<span>Оптимизация ресурсов</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -111,7 +113,7 @@
 
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl" uk-parallax="opacity: 1; y: -130,130; viewport: 0.5">
 					<span>Надежность и быстрота</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -121,7 +123,7 @@
 
 		<div class="about-block">		
 			<div class="about-block__inn">
-				<div class="about-inn__ttl section__ttl">
+				<div class="about-inn__ttl section__ttl about-inn__left" uk-parallax="opacity: 1; y: -180,180; viewport: 0.5">
 					<span>Профессионализм и технологии</span>
 					<a class="btn about-btn" href="">Побробнее</a>
 				</div>
@@ -219,5 +221,13 @@
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<script src="libs/slick/slick.min.js"></script>
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="libs/uikit-3.4.6/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="libs/uikit-3.4.6/js/uikit.min.js"></script>
+	<script src="libs/uikit-3.4.6/js/uikit-icons.min.js"></script>
+	
+
 </body>
 </html>

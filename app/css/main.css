@@ -69,15 +69,19 @@ a:hover {
   width: 100%;
   background-repeat: no-repeat;
   height: 600px; 
-  background-size: cover;
+  background-size: 100% cover!important;
   background-position: 50% 50%;  
-  will-change: transform,opacity;
 }
 
 .banner-wrap {
+   height:100vh;
+  /*background:rgba(255,255,255,0.5);  */
+}
+
+.banner-wrap_inn {
   max-width: 1170px;
   margin: 0px auto;
-  padding: 183px 0;
+  padding: 60px 0;
 }
 
 .banner__ttl {
@@ -98,6 +102,8 @@ a:hover {
   color: #fff;
   border: none;
   font-family: 'GT Eesti Pro Display;';
+  display: block;
+  max-width: 167px;
 }
 
 .btn:hover {
@@ -110,6 +116,7 @@ a:hover {
   font-size: 25px;
   line-height: 27px;
   padding: 13px 50px;
+  max-width: 229px;
 }
 
 .banner__btn:hover {
@@ -202,7 +209,9 @@ a:hover {
 .news-item__inn {
   padding: 0 20px;
 }
-
+.news-item__inn .btn {
+  margin: 0 auto;
+}
 .news-link {
   font-weight: 350;
   font-size: 20px;
@@ -228,7 +237,23 @@ a:hover {
   color: #000;
   max-width: 367px;
   margin: 0 auto 20px;
+  position: relative;
 }
+
+.about-inn__ttl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100px;
+  background: #003399;
+}
+
+.about-inn__left.about-inn__ttl::after {
+  left: -70px;
+}
+
 
 .about-ttl {
   font-weight: 350;
@@ -259,6 +284,10 @@ a:hover {
 
 .about-block__inn {
   width: 45%;
+}
+
+.about-block__inn .btn {
+  margin: 30px 0 0;
 }
 
 .about-block:nth-child(odd) {
